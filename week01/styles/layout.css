@@ -27,10 +27,12 @@ nav a {
   
 }
 main{
+  padding: 25px;
   background-color: rgb(204,204,204);
   grid-column: 1/3;
 }
 aside{
+  padding: 25px;
   background-color: white;
   grid-column: 3/4;
 }
