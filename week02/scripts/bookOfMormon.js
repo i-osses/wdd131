@@ -5,8 +5,9 @@ const list = document.querySelector("#list");
 button.addEventListener("click", function(){
   const chapter = input.value;
 
-  if (chapter === ""){
+  if (chapter.trim() === ""){
     alert("The value is empty");
+    input.value = "";
     input.focus();
   } else {
     const li = document.createElement("li");
