@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temples Album</title>
+  <meta name="author" content="Ignacio Osses">
+  <meta name="description" content="responsive photo album with hamburger menu navigation for mobile screen size">
+  <script src="scripts/temples.js" defer></script>
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <header>
+    <h1>Temples Album</h1>
+    <a href="#" id="menu"></a>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <h2>Temples Images</h2>
+
+    <!-- (figure>img[src="temple$"][alt="temple$"]+figcaption{temple$})*9 -->
+    <div class="grid-container">
+      <figure>
+        <img src="images/san-diego-temple.jpg" alt="temple1">
+        <figcaption>temple1</figcaption>
+      </figure>
+      <figure>
+        <img src="images/san-diego-temple.jpg" alt="temple2">
+        <figcaption>temple2</figcaption>
+      </figure>
+      <figure>
+        <img src="images/san-diego-temple.jpg" alt="temple3">
+        <figcaption>temple3</figcaption>
+      </figure>
+      <figure>
+        <img src="images/san-diego-temple.jpg" alt="temple4">
+        <figcaption>temple4</figcaption>
+      </figure>
+      <figure>
+        <img src="images/san-diego-temple.jpg" alt="temple5">
+        <figcaption>temple5</figcaption>
+      </figure>
+      <figure>
+        <img src="images/san-diego-temple.jpg" alt="temple6">
+        <figcaption>temple6</figcaption>
+      </figure>
+      <figure>
+        <img src="images/san-diego-temple.jpg" alt="temple7">
+        <figcaption>temple7</figcaption>
+      </figure>
+      <figure>
+        <img src="images/san-diego-temple.jpg" alt="temple8">
+        <figcaption>temple8</figcaption>
+      </figure>
+      <figure>
+        <img src="images/san-diego-temple.jpg" alt="temple9">
+        <figcaption>temple9</figcaption>
+      </figure>
+    </div>
+
+
+  </main>
+  <footer>
+    <p>© <span id="currentyear"> </span> - Ignacio Osses - Chile</p>
+    <p>Last Modification: <span id="lastmodify"></span></p>
+  </footer>
+
+</body>
+
+</html>
