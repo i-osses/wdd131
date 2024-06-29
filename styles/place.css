@@ -50,6 +50,7 @@ header {
 h1 {
   padding: 2rem;
   font-size: 3rem;
+  font-family: "Lobster", sans-serif;
 }
 
 h2 {
@@ -74,7 +75,6 @@ h2 {
 .weather-box svg {
   width: 10rem;
   height: 10rem;
-  justify-content: center;
 }
 
 .data-row {
@@ -105,9 +105,34 @@ footer {
   width: 100%;
 }
 
+/* SVG Style */
+.cls-1 {
+  fill: #f8b62d;
+}
+
+.cls-1,
+.cls-2 {
+  stroke: #231815;
+  stroke-miterlimit: 10;
+}
+
+.cls-2,
+.cls-4 {
+  fill: #231815;
+}
+
+.cls-3 {
+  fill: #fff;
+}
+
 @media screen and (min-width: 950px) {
   header {
     height: 20vh;
+  }
+
+  h1 {
+    font-size: 5rem;
+    font-style: normal;
   }
 
   .data-box,
@@ -138,6 +163,7 @@ footer {
   }
 
   .weather-box {
+    display: block;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -145,8 +171,6 @@ footer {
 
   .weather-box h2::after {
     content: "🌦️";
-    right: 3rem;
-    top: 1.25rem;
   }
 
   .weather-box svg {
