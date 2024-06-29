@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2e2e3a;
+  --secondary-color: #1a1a2e;
+  --font-header-footer: #ffffff;
+}
+
+html,
+body {
+  background-color: #f0f0f0;
+  color: var(--primary-color);
+  font-family: Arial, sans-serif;
+  height: 100%;
+  font-size: 1.1rem;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr 2fr;
+}
+
+main {
+  padding: 0.5rem 0;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  background-color: var(--secondary-color);
+  color: var(--font-header-footer);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+h2 {
+  padding: 0.5rem;
+}
+
+.data-box,
+.weather-box h2 {
+  text-align: center;
+}
+
+.data-box,
+.weather-box {
+  transition: all 0.5s ease;
+}
+.weather-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.weather-box svg {
+  width: 10rem;
+  height: 10rem;
+  justify-content: center;
+}
+
+.data-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.data-label {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.data-value {
+  font-size: 1rem;
+  text-align: left;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--font-header-footer);
+  padding: 2rem;
+  text-align: center;
+  align-content: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 950px) {
+  header {
+    height: 20vh;
+  }
+
+  .data-box,
+  .weather-box h2 {
+    text-align: left;
+  }
+
+  .weather-box,
+  .data-box {
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 3rem var(--secondary-color);
+    margin: 0 1rem;
+    opacity: 0.8;
+    font-size: 1.5rem;
+    margin: 0 3rem;
+    border-radius: 0.6rem;
+  }
+
+  .data-box {
+    position: absolute;
+    top: 0;
+  }
+
+  .data-value,
+  .data-label {
+    font-size: 1.2rem;
+  }
+
+  .weather-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .weather-box h2::after {
+    content: "🌦️";
+    right: 3rem;
+    top: 1.25rem;
+  }
+
+  .weather-box svg {
+    display: none;
+  }
+}
