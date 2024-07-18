@@ -10,7 +10,6 @@
   --font-header-footer: #ffffff;
   --background-color: #fff4e6;
 }
-
 body {
   font-family: "Merriweather", serif;
   background-color: var(--background-color);
