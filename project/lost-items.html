@@ -10,10 +10,12 @@
     content="non official site for Liahona ward of the Church of Jesus Christ of Latter Day Saints">
   <link rel="stylesheet" href="styles/project.css">
   <link rel="stylesheet" href="styles/project-large.css">
+  <link rel="stylesheet" href="styles/lost-items.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="scripts/project.js" defer></script>
+  <script src="scripts/lost-items.js" defer></script>
 </head>
 
 <body>
@@ -30,7 +32,30 @@
     </nav>
   </header>
 
-  <main></main>
+  <main>
+    <form id="lost-found-form">
+      <label for="status">Status:</label>
+      <select id="status" name="status" required>
+        <option value="found">Found</option>
+        <option value="lost">Lost</option>
+      </select>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="name">Name of Item:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="contact">Contact:</label>
+      <input type="text" id="contact" name="contact" required>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Submitted Items</h2>
+    <div id="items-container"></div>
+
+  </main>
 
   <footer>
     <div id="footer_text">

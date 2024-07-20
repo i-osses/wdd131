@@ -8,36 +8,37 @@
   <meta name="author" content="Ignacio Osses">
   <meta name="description"
     content="non official site for Liahona ward of the Church of Jesus Christ of Latter Day Saints">
-  <link rel="stylesheet" href="styles/project.css">
-  <link rel="stylesheet" href="styles/project-large.css">
+  <link rel="stylesheet" href="styles/timer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-  <script src="scripts/project.js" defer></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="scripts/timer.js" defer></script>
 </head>
 
 <body>
-  <header>
-    <h1>Liahona Ward</h1>
-    <a href="#" id="menu"></a>
-    <nav>
-      <ul class="navigation">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="activities.html">Activities</a></li>
-        <li><a href="lost-items.html">Lost Items</a></li>
-        <li><a href="talk-timer.html">Talks Timer</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main></main>
 
-  <footer>
-    <div id="footer_text">
-      <p>© <span id="currentyear"> </span> - Ignacio Osses - Chile</p>
-      <p>Last Modification: <span id="lastmodify"></span></p>
+  <div class="container">
+    <p id="flip">Flip the screen</p>
+    <div class="input-group">
+      <input type="number" id="minutesInput" placeholder="Enter minutes">
+      <button id="startButton">Start</button>
+      <a href="home.html"><span id="home-btn" class="material-symbols-rounded">
+          home
+        </span></a>
     </div>
-  </footer>
+    <div id="countdownDisplay">00:00</div>
+  </div>
 
+  <div class="traffic-light">
+    <div id="greenLight" class="light"></div>
+    <div id="yellowLight" class="light"></div>
+    <div id="redLight" class="light"></div>
+  </div>
+
+
+</body>
 
 </html>

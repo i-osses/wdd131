@@ -36,4 +36,33 @@
     padding: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+
+  /* Hymns Home Page */
+  .hymns {
+    padding: 2.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+  }
+
+  .hymns-header {
+    text-align: center;
+    grid-column: span 4;
+  }
+
+  .hymns-image {
+    grid-column: span 2;
+    text-align: right;
+    padding-right: 3rem;
+  }
+
+  .hymns-list {
+    align-content: center;
+    grid-column: span 2;
+  }
+
+  #flip {
+    display: none;
+  }
 }

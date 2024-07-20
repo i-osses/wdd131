@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+#home-btn {
+  /* padding: 10px; */
+  font-size: 4rem;
+}
+
+#minutesInput {
+  width: fit-content;
+}
+
+.input-group {
+  display: flex;
+  margin: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#minutesInput {
+  width: 13rem;
+}
+
+#countdownDisplay {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.light {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px 0;
+  background-color: grey;
+}
+
+#greenLight.active {
+  background-color: green;
+}
+
+#yellowLight.active {
+  background-color: yellow;
+}
+
+#redLight.active {
+  background-color: red;
+}
+
+@media (orientation: landscape) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+  }
+
+  input,
+  button {
+    font-size: 2rem;
+  }
+
+  #countdownDisplay {
+    font-size: 15rem;
+  }
+
+  .light {
+    width: 100px;
+    height: 100px;
+  }
+  .traffic-light {
+    padding: 0 2rem;
+  }
+
+  header,
+  footer {
+    display: none;
+  }
+
+  #flip {
+    display: none; /* Hide initially */
+  }
+}

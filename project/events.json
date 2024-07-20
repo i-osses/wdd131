@@ -1,0 +1,52 @@
+[
+  {
+    "date": "2024-07-20",
+    "name": "Ward Picnic",
+    "details": "Join us for a fun-filled picnic at the local park."
+  },
+  {
+    "date": "2024-07-27",
+    "name": "Service Project",
+    "details": "Help us clean the community center."
+  },
+  {
+    "date": "2024-08-03",
+    "name": "Youth Conference",
+    "details": "A special conference for the youth with guest speakers and activities."
+  },
+  {
+    "date": "2024-08-10",
+    "name": "Family Game Night",
+    "details": "Bring your favorite board games and enjoy an evening with the ward."
+  },
+  {
+    "date": "2024-08-17",
+    "name": "Back-to-School BBQ",
+    "details": "Celebrate the start of the school year with a BBQ at the church."
+  },
+  {
+    "date": "2024-08-24",
+    "name": "Community Service Day",
+    "details": "Volunteer for various community service projects throughout the day."
+  },
+  {
+    "date": "2024-09-01",
+    "name": "Book Swap",
+    "details": "Bring books you no longer need and exchange them for new reads."
+  },
+  {
+    "date": "2024-09-08",
+    "name": "Ward Talent Show",
+    "details": "Showcase your talents in our annual talent show."
+  },
+  {
+    "date": "2024-09-15",
+    "name": "Cooking Class",
+    "details": "Learn new recipes and cooking techniques from our local chefs."
+  },
+  {
+    "date": "2024-09-22",
+    "name": "Fall Festival",
+    "details": "Enjoy a day of autumn-themed games, food, and activities for all ages."
+  }
+]
